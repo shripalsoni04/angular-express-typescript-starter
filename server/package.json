@@ -1,0 +1,27 @@
+{
+  "name": "node-ts-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "node ./node_modules/typescript/lib/tsc",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.16.4",
+    "@types/express": "^4.0.36",
+    "@types/node": "^8.0.20",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "colors": "^1.1.2",
+    "express": "^4.15.4"
+  }
+}
